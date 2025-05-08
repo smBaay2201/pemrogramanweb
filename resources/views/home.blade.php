@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuBaDiBaKo - Budi Baik Di Balas Koko</title>
     <meta name="description" content="Komunitas sosial yang berfokus pada pertukaran kebaikan">
-    @vite('resources/css/app.css')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +55,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24" id='beranda'>
+    <section class="px-8 sm:px-10 lg:px-8 py-23 md:pb-43" id='beranda'>
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <div class="flex items-center space-x-4">
@@ -98,7 +97,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-gray-50 py-16 md:py-24" id="tentangKami">
+    <section class="bg-gray-50 py-10 md:py-10" id="tentangKami">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">
                 <span class="text-black">Tentang</span> <span class="text-emerald-500">Kami</span>
@@ -174,113 +173,260 @@
         </div>
     </section>
 
-    <!-- Notulensi Section -->
-    <section class="bg-gray-50 py-16 md:py-24" id="notulensi">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-emerald-500">NOTULENSI</h2>
+    <section class="bg-gray-50 py-20 md:py-28" id="notulensi">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 text-emerald-600 text-center">NOTULENSI</h2>
 
-            <div class="space-y-8">
-                <!-- Notulensi Banner 1 -->
-                <div class="relative w-full md:w-3/4 h-40 flex items-center px-8 md:px-16 bg-black" 
-                     style="clip-path: polygon(0 0%, 100% 25%, 100% 75%, 0 100%);">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white">Ketua</h3>
-                </div>
-
-                <!-- Notulensi Banner 2 -->
-                <div class="relative w-full md:w-3/4 h-40 flex items-center px-8 md:px-16 bg-emerald-500 ml-auto" 
-                     style="clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 75%);">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white ml-auto">Sekretaris</h3>
-                </div>
-
-                <!-- Notulensi Banner 3 -->
-                <div class="relative w-full md:w-3/4 h-40 flex items-center px-8 md:px-16 bg-black" 
-                     style="clip-path: polygon(0 0%, 100% 25%, 100% 75%, 0 100%);">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white">Bendahara</h3>
-                </div>
-
-                <!-- Notulensi Banner 4 -->
-                <div class="relative w-full md:w-3/4 h-40 flex items-center px-8 md:px-16 bg-emerald-500 ml-auto" 
-                     style="clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 75%);">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white ml-auto">Koordinator Program</h3>
-                </div>
-
-                <!-- Notulensi Banner 5 -->
-                <div class="relative w-full md:w-3/4 h-40 flex items-center px-8 md:px-16 bg-black" 
-                     style="clip-path: polygon(0 0%, 100% 25%, 100% 75%, 0 100%);">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white">Anggota</h3>
-                </div>
-            </div>
+    <div class="space-y-12 max-w-4xl mx-auto">
+      <!-- Ketua -->
+      <a href="/notulensi/ketua" class="group flex flex-col md:flex-row items-center md:items-start w-full text-left bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden focus:outline-none">
+        <div class="w-full md:w-full p-10 bg-emerald-500 text-white text-center">
+          <h3 class="text-2xl font-bold">Ketua</h3>
         </div>
-    </section>
+      </a>
 
-    <!-- Contact Section -->
-    <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24" id="kontak">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">KONTAK KAMI</h2>
-
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <!-- WhatsApp Contact Card -->
-            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full p-8">
-                <h3 class="text-2xl font-bold text-center flex items-center justify-center gap-2 mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    WhatsApp
-                </h3>
-                <ul class="space-y-4">
-                    <li class="text-center">
-                        <p class="font-semibold text-lg">Bayu</p>
-                        <p class="text-emerald-600">080000000000</p>
-                    </li>
-                    <li class="text-center">
-                        <p class="font-semibold text-lg">Bayu</p>
-                        <p class="text-emerald-600">080000000000</p>
-                    </li>
-                    <li class="text-center">
-                        <p class="font-semibold text-lg">Bayu</p>
-                        <p class="text-emerald-600">080000000000</p>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Email Contact Card -->
-            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full p-8">
-                <h3 class="text-2xl font-bold text-center flex items-center justify-center gap-2 mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Email
-                </h3>
-                <ul class="space-y-4">
-                    <li class="text-center">
-                        <p class="font-semibold text-lg">Bayu</p>
-                        <p class="text-emerald-600">Bayufirdaus@gmail.com</p>
-                    </li>
-                    <li class="text-center">
-                        <p class="font-semibold text-lg">Bayu</p>
-                        <p class="text-emerald-600">Bayufirdaus@gmail.com</p>
-                    </li>
-                    <li class="text-center">
-                        <p class="font-semibold text-lg">Bayu</p>
-                        <p class="text-emerald-600">Bayufirdaus@gmail.com</p>
-                    </li>
-                </ul>
-            </div>
+      <!-- Sekretaris -->
+      <a href="/notulensi/sekretaris" class="group flex flex-col md:flex-row-reverse items-center md:items-start w-full text-left bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden focus:outline-none">
+        <div class="w-full md:w-full p-10 bg-black text-white text-center">
+          <h3 class="text-2xl font-bold">Sekretaris</h3>
         </div>
-    </section>
+      </a>
 
-    <!-- Floating Action Button -->
-    <div id="chatBox" class="fixed bottom-24 right-6 w-80 bg-white shadow-lg rounded-xl p-4 hidden z-50">
-    <h3 class="font-bold text-gray-700 mb-2">Tanya AI</h3>
-    <textarea id="chatInput" class="w-full h-24 border border-gray-300 rounded-md p-2 resize-none focus:outline-none focus:ring focus:ring-emerald-300" placeholder="Ketik pertanyaan..."></textarea>
-    <button class="mt-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md w-full">
-        Kirim
-    </button>
-</div>
+      <!-- Bendahara -->
+      <a href="/notulensi/bendahara" class="group flex flex-col md:flex-row items-center md:items-start w-full text-left bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden focus:outline-none">
+        <div class="w-full md:w-full p-10 bg-emerald-500 text-white text-center">
+          <h3 class="text-2xl font-bold">Bendahara</h3>
+        </div>
+      </a>
 
-    <footer>
+      <!-- Koordinator Program -->
+      <a href="/notulensi/koordinator-program" class="group flex flex-col md:flex-row-reverse items-center md:items-start w-full text-left bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden focus:outline-none">
+        <div class="w-full md:w-full p-10 bg-black text-white text-center">
+          <h3 class="text-2xl font-bold">Koordinator Program</h3>
+        </div>
+      </a>
       
-    </footer>
+    </div>
+  </div>
+</section>
+
+
+<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28" id="kontak">
+  <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center text-emerald-600">KONTAK KAMI</h2>
+
+  <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+    <!-- WhatsApp Card -->
+    <div class="group bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-10 text-center">
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <div class="bg-emerald-100 text-emerald-600 rounded-full p-4 group-hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.52 3.48a11.94 11.94 0 0 0-16.9 0 12.06 12.06 0 0 0-2.43 13.07l-1.13 4.14a.75.75 0 0 0 .92.92l4.14-1.13a12.02 12.02 0 0 0 5.83 1.5c3.2 0 6.23-1.24 8.49-3.51a12 12 0 0 0 0-16.99zM12 21.25a9.24 9.24 0 0 1-4.61-1.22.75.75 0 0 0-.58-.07l-3.42.94.93-3.42a.75.75 0 0 0-.07-.58 9.28 9.28 0 1 1 7.75 4.35z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800">WhatsApp</h3>
+        <ul class="space-y-2">
+          <li>
+            <p class="font-medium">Bayu</p>
+            <a href="https://wa.me/6280000000000" target="_blank" class="text-emerald-600 hover:underline">0800-0000-0000</a>
+          </li>
+          <li>
+            <p class="font-medium">Rina</p>
+            <a href="https://wa.me/6281111111111" target="_blank" class="text-emerald-600 hover:underline">0811-1111-1111</a>
+          </li>
+          <li>
+            <p class="font-medium">Dika</p>
+            <a href="https://wa.me/6282222222222" target="_blank" class="text-emerald-600 hover:underline">0822-2222-2222</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Email Card -->
+    <div class="group bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-10 text-center">
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <div class="bg-emerald-100 text-emerald-600 rounded-full p-4 group-hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4m8-6v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16 0V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800">Email</h3>
+        <ul class="space-y-2">
+          <li>
+            <p class="font-medium">Bayu</p>
+            <a href="mailto:bayufirdaus@gmail.com" class="text-emerald-600 hover:underline">bayufirdaus@gmail.com</a>
+          </li>
+          <li>
+            <p class="font-medium">Rina</p>
+            <a href="mailto:rina@example.com" class="text-emerald-600 hover:underline">rina@example.com</a>
+          </li>
+          <li>
+            <p class="font-medium">Dika</p>
+            <a href="mailto:dika@example.com" class="text-emerald-600 hover:underline">dika@example.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-black text-white py-12 mt-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Logo & Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="{{ asset('images/bubadibako-logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
+                    <span class="text-xl font-bold">BuBaDiBaKo</span>
+                </div>
+                <p class="text-gray-400">
+                    Budi Baik Di Balas Koko — Komunitas yang menginspirasi kebaikan melalui tindakan nyata.
+                </p>
+            </div>
+
+            <!-- Navigasi -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="#tentangKami" class="hover:text-white transition">Tentang Kami</a></li>
+                    <li><a href="#proker" class="hover:text-white transition">Proker</a></li>
+                    <li><a href="#notulensi" class="hover:text-white transition">Notulensi</a></li>
+                </ul>
+            </div>
+
+            <!-- Sosial Media -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-emerald-500 transition" aria-label="Instagram">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 2c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm4.5-2a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-emerald-500 transition" aria-label="YouTube">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M10 15l5.19-3L10 9v6zm12-3c0-1.657-.673-3.156-1.757-4.243C19.156 6.673 17.657 6 16 6H8C6.343 6 4.844 6.673 3.757 7.757 2.673 8.844 2 10.343 2 12s.673 3.156 1.757 4.243C4.844 17.327 6.343 18 8 18h8c1.657 0 3.156-.673 4.243-1.757C21.327 15.156 22 13.657 22 12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+            © {{ date('Y') }} BuBaDiBaKo. All rights reserved.
+        </div>
+    </div>
+</footer>
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+  #chatbot-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #chatbot-box {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 998;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  #chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+
+  #chat-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #chat-input button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<button id="chatbot-button">💬</button>
+
+<div id="chatbot-box">
+  <div id="chat-messages"></div>
+  <div id="chat-input">
+    <input type="text" id="message" placeholder="Tulis pertanyaan...">
+    <button onclick="sendMessage()">Kirim</button>
+  </div>
+</div>
+
+<script>
+  const button = document.getElementById('chatbot-button');
+  const box = document.getElementById('chatbot-box');
+  const messages = document.getElementById('chat-messages');
+  const input = document.getElementById('message');
+
+  button.addEventListener('click', () => {
+    box.style.display = box.style.display === 'none' ? 'block' : 'none';
+  });
+
+  function sendMessage() {
+    const text = input.value;
+    if (!text) return;
+
+    appendMessage('👤', text);
+    input.value = '';
+
+    fetch('/api/chatbot', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text })
+    })
+    .then(res => res.json())
+    .then(data => {
+      const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || 'Maaf, saya tidak mengerti.';
+      appendMessage('🤖', reply);
+    })
+    .catch(() => {
+      appendMessage('❌', 'Terjadi kesalahan.');
+    });
+  }
+
+  function appendMessage(sender, text) {
+    const msg = document.createElement('div');
+    msg.innerHTML = `<strong>${sender}</strong>: ${text}`;
+    messages.appendChild(msg);
+    messages.scrollTop = messages.scrollHeight;
+  }
+</script>
 </body>
 </html>

@@ -8,19 +8,22 @@
 </head>
 <body>
     <div class="min-h-screen bg-white">
-        <!-- Navbar -->
        <!-- Navbar -->
-        <nav class="w-full border-b">
-           <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-center">
-             <a href="/" class="text-2xl font-bold flex items-center">
-                <span class="text-black">Bu</span>
-                <span class="text-emerald-500">Ba</span>
-                <span class="text-black">Di</span>
-                <span class="text-emerald-500">Ba</span>
-                <span class="text-black">Ko</span>
-              </a>
+       <nav class="w-full border-b">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold flex items-center">
+                    <span class="text-black">Bu</span>
+                    <span class="text-emerald-500">Ba</span>
+                    <span class="text-black">Di</span>
+                    <span class="text-emerald-500">Ba</span>
+                    <span class="text-black">Ko</span>
+                </a>
+                <!-- Tombol Login -->
+                <button onclick="alert('Login button clicked!')" class="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition">
+                    Login
+                </button>
             </div>
-          </nav>
+        </nav>
 
 
         <!-- Team Photos Top -->
@@ -150,5 +153,54 @@
             </div>
         </div>
     </div>
+    
+    <footer class="bg-black text-white py-12 mt-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Logo & Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="{{ asset('images/bubadibako-logo.png') }}" alt="Logo" class="w-10 h-10 object-contain">
+                    <span class="text-xl font-bold">BuBaDiBaKo</span>
+                </div>
+                <p class="text-gray-400">
+                    Budi Baik Di Balas Koko — Komunitas yang menginspirasi kebaikan melalui tindakan nyata.
+                </p>
+            </div>
+
+            <!-- Navigasi -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="#tentangKami" class="hover:text-white transition">Tentang Kami</a></li>
+                    <li><a href="#proker" class="hover:text-white transition">Proker</a></li>
+                    <li><a href="#notulensi" class="hover:text-white transition">Notulensi</a></li>
+                </ul>
+            </div>
+
+            <!-- Sosial Media -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-emerald-500 transition" aria-label="Instagram">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 2c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm4.5-2a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-emerald-500 transition" aria-label="YouTube">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M10 15l5.19-3L10 9v6zm12-3c0-1.657-.673-3.156-1.757-4.243C19.156 6.673 17.657 6 16 6H8C6.343 6 4.844 6.673 3.757 7.757 2.673 8.844 2 10.343 2 12s.673 3.156 1.757 4.243C4.844 17.327 6.343 18 8 18h8c1.657 0 3.156-.673 4.243-1.757C21.327 15.156 22 13.657 22 12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+            © {{ date('Y') }} BuBaDiBaKo. All rights reserved.
+        </div>
+    </div>
+</footer>
 </body>
 </html>

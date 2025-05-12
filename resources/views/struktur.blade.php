@@ -9,23 +9,19 @@
 <body>
     <div class="min-h-screen bg-white">
         <!-- Navbar -->
+       <!-- Navbar -->
         <nav class="w-full border-b">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold">
-                    <span class="text-black">Bu</span>
-                    <span class="text-emerald-500">Ba</span>
-                    <span class="text-black">Di</span>
-                    <span class="text-emerald-500">Ba</span>
-                    <span class="text-black">Ko</span>
-                </a>
-
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/struktur" class="text-emerald-500 hover:text-emerald-600 transition-colors duration-200">
-                        Struktur
-                    </a>
-                </div>
+           <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-center">
+             <a href="/" class="text-2xl font-bold flex items-center">
+                <span class="text-black">Bu</span>
+                <span class="text-emerald-500">Ba</span>
+                <span class="text-black">Di</span>
+                <span class="text-emerald-500">Ba</span>
+                <span class="text-black">Ko</span>
+              </a>
             </div>
-        </nav>
+          </nav>
+
 
         <!-- Team Photos Top -->
         <div class="container mx-auto px-4 py-12">

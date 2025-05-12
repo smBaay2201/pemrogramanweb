@@ -32,3 +32,7 @@ Route::get('/coba', function (){
 Route::get('/struktur', function (){
     return view('struktur');
 });
+
+Route::get('/dasboard', function (){
+    return view('dasboard');
+});

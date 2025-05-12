@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/home', function (Request $request) {
     return $request->home();
 });
+
+Route::middleware('auth:sanctum')->get('/struktur', function (Request $request) {
+    return $request->struktur();
+});

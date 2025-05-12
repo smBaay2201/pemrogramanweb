@@ -28,3 +28,7 @@ Route::get('/login', function (){
 Route::get('/coba', function (){
     return view('coba');
 });
+
+Route::get('/struktur', function (){
+    return view('struktur');
+});

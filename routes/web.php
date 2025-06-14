@@ -28,3 +28,11 @@ Route::get('/login', function (){
 Route::get('/coba', function (){
     return view('coba');
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/struktur', function () {
+    return view('struktur');
+});
